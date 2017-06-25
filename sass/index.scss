@@ -9,7 +9,8 @@ body {
 }
 
 nav {
-  background: #4f7b7e;
+  // background: #4f7b7e;
+  background: lightblue;
   width: 100%;
   margin: 0 auto;
   height: 100px;
@@ -18,11 +19,33 @@ nav {
   color: white;
   
   div {
-    border: 1px solid black;
+    float:left;
+    margin: auto;
+  }
+  
+  a {
     float: right;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
   }
 }
 
+#root {
+  &.container {
+    padding-right: 0; 
+    padding-left: 0;
+  }
+}
+
+#logo{
+  width: 100px;
+  
+  
+}
 
 .mission {
 }

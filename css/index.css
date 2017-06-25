@@ -6,7 +6,7 @@ body {
   src: url(../fonts/bettynoir.ttf) format("truetype"); }
 
 nav {
-  background: #4f7b7e;
+  background: lightblue;
   width: 100%;
   margin: 0 auto;
   height: 100px;
@@ -14,5 +14,19 @@ nav {
   font-size: 24px;
   color: white; }
   nav div {
-    border: 1px solid black;
-    float: right; }
+    float: left;
+    margin: auto; }
+  nav a {
+    float: right;
+    cursor: pointer;
+    text-decoration: none;
+    color: white; }
+  nav a:hover {
+    text-decoration: none; }
+
+#root.container {
+  padding-right: 0;
+  padding-left: 0; }
+
+#logo {
+  width: 100px; }
