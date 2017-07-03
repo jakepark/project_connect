@@ -8,43 +8,58 @@ body {
   src: url(../fonts/bettynoir.ttf) format("truetype");
 }
 
-nav {
-  // background: #4f7b7e;
-  background: lightblue;
-  width: 100%;
-  margin: 0 auto;
-  height: 100px;
-  font-family: "Betty Noir", Verdana, Tahoma;
-  font-size: 24px;
-  color: white;
-  
-  div {
-    float:left;
-    margin: auto;
-  }
-  
-  a {
-    float: right;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-}
-
 #root {
   &.container {
     padding-right: 0; 
     padding-left: 0;
   }
+  
+  nav {
+    // background: #4f7b7e;
+    background: white;
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    font-family: "Betty Noir", Verdana, Tahoma;
+    font-size: 24px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    div {
+      float:left;
+      flex: 1;
+    }
+    
+    a {
+      float: right;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      margin: 0 5px;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    
+    .logo {
+      text-align: center;
+      
+      a {
+        float: initial;
+      }
+    }
+  }
+  
+  main {
+    border: 1px solid red;
+    min-height: 100vh;
+  }
 }
 
 #logo{
   width: 100px;
-  
-  
 }
 
 .mission {

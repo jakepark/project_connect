@@ -5,28 +5,40 @@ body {
   font-family: "Betty Noir";
   src: url(../fonts/bettynoir.ttf) format("truetype"); }
 
-nav {
-  background: lightblue;
+#root.container {
+  padding-right: 0;
+  padding-left: 0; }
+
+#root nav {
+  background: white;
   width: 100%;
   margin: 0 auto;
   height: 100px;
   font-family: "Betty Noir", Verdana, Tahoma;
   font-size: 24px;
-  color: white; }
-  nav div {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #root nav div {
     float: left;
-    margin: auto; }
-  nav a {
+    flex: 1; }
+  #root nav a {
     float: right;
     cursor: pointer;
     text-decoration: none;
-    color: white; }
-  nav a:hover {
+    color: black;
+    margin: 0 5px; }
+  #root nav a:hover {
     text-decoration: none; }
+  #root nav .logo {
+    text-align: center; }
+    #root nav .logo a {
+      float: initial; }
 
-#root.container {
-  padding-right: 0;
-  padding-left: 0; }
+#root main {
+  border: 1px solid red;
+  min-height: 100vh; }
 
 #logo {
   width: 100px; }
